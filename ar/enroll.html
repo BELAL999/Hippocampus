@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل في الدورة - أكاديمية هيبوكامبوس</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/rtl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1><i class="fas fa-brain"></i></h1>
+                </a>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                        <div class="slider-icons">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </label>
+                </div>
+                <div class="language-switcher">
+                    <a href="../enroll.html"><i class="fas fa-language"></i> English</a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="medicine.html">الطب</a></li>
+                    <li><a href="dental.html">طب الأسنان</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1 id="course-title">التسجيل في الدورة</h1>
+            <p id="course-subtitle">انضم إلى برنامجنا الشامل لمتخصصي الرعاية الصحية</p>
+        </div>
+    </section>
+
+    <!-- Course Details Section -->
+    <section class="course-details">
+        <div class="container">
+            <div class="course-overview">
+                <div class="course-header">
+                    <div id="course-image" class="course-detail-image"></div>
+                    <div class="course-header-content">
+                        <h2 id="course-name">اسم الدورة</h2>
+                        <div class="course-meta">
+                            <span id="course-duration"><i class="far fa-clock"></i> المدة</span>
+                            <span id="course-students"><i class="fas fa-users"></i> عدد الطلاب محدود</span>
+                            <span id="course-certificate"><i class="fas fa-certificate"></i> شهادة معتمدة</span>
+                            <span id="course-price"><i class="fas fa-tag"></i> السعر</span>
+                        </div>
+                        <div class="course-deadline">
+                            <p><strong>آخر موعد للتسجيل:</strong> <span id="registration-deadline">15 يونيو 2025</span></p>
+                        </div>
+                        <div class="course-actions">
+                            <a href="#enrollment-form" class="btn btn-primary">سجل الآن</a>
+                            <a href="#curriculum" class="btn btn-secondary">عرض المنهج</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course content will be loaded dynamically with JavaScript -->
+    <div id="dynamic-content">
+        <!-- This section will be populated by JavaScript -->
+    </div>
+
+    <!-- Enrollment Form Section -->
+    <section class="enrollment-form" id="enrollment-form">
+        <div class="container">
+            <h2 class="section-title">طلب التسجيل</h2>
+            <div class="form-container">
+                <form id="enroll-form">
+                    <h3>المعلومات الشخصية</h3>
+                    <div class="form-group">
+                        <label for="full-name">الاسم الكامل *</label>
+                        <input type="text" id="full-name" name="full_name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nationality">الجنسية *</label>
+                        <input type="text" id="nationality" name="nationality" required>
+                    </div>
+                    
+                    <h3>الخلفية التعليمية</h3>
+                    <div class="form-group">
+                        <label for="education">أعلى مستوى تعليمي *</label>
+                        <select id="education" name="education" required>
+                            <option value="">اختر خيارًا</option>
+                            <option value="high-school">الثانوية العامة</option>
+                            <option value="bachelors">البكالوريوس</option>
+                            <option value="masters">الماجستير</option>
+                            <option value="phd">الدكتوراه</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="institution">اسم المؤسسة التعليمية *</label>
+                        <input type="text" id="institution" name="institution" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="field-of-study">مجال الدراسة *</label>
+                        <input type="text" id="field-of-study" name="field_of_study" required>
+                    </div>
+                    
+                    <h3>معلومات الدفع</h3>
+                    <div class="form-group">
+                        <label for="payment-method">طريقة الدفع المفضلة *</label>
+                        <select id="payment-method" name="payment_method" required>
+                            <option value="">اختر خيارًا</option>
+                            <option value="credit-card">بطاقة ائتمان</option>
+                            <option value="bank-transfer">حوالة بنكية</option>
+                            <option value="installment">خطة تقسيط</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group form-checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">أوافق على <a href="#">الشروط والأحكام</a> و<a href="#">سياسة الخصوصية</a> لأكاديمية هيبوكامبوس.</label>
+                    </div>
+                    
+                    <div class="form-action">
+                        <button type="submit" class="btn btn-primary">تقديم الطلب</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">الأسئلة الشائعة</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ما هي خيارات الدفع؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نقدم خيارات دفع متنوعة تشمل بطاقة الائتمان والتحويل المصرفي وخطط التقسيط. بعد قبول طلبك، سيتواصل معك قسم المالية بتعليمات مفصلة بناءً على طريقة الدفع المفضلة لديك.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل هناك سياسة استرداد؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، لدينا سياسة استرداد. إذا انسحبت قبل 14 يومًا على الأقل من بدء الدورة، ستحصل على استرداد كامل ناقص رسوم إدارية. بالنسبة للانسحابات قبل أقل من 14 يومًا من تاريخ البدء، قد يكون الاسترداد الجزئي متاحًا. لا يتم تقديم استردادات بمجرد بدء الدورة.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ما هي المواد التي أحتاجها للدورة؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>جميع الكتب المدرسية المطلوبة والموارد الرقمية مشمولة في رسوم الدورة. ستحتاج إلى الوصول إلى جهاز كمبيوتر متصل بالإنترنت للوصول إلى المواد عبر الإنترنت. بالنسبة لدورات محددة، سيتم إبلاغك بالمتطلبات الإضافية بعد التسجيل.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>كيف سأحصل على شهادتي؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>عند إكمال الدورة بنجاح واجتياز جميع التقييمات، ستحصل على شهادتك رقميًا في غضون أسبوعين. يمكن إرسال الشهادات الورقية عند الطلب مقابل رسوم إضافية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3><i class="fas fa-brain"></i> أكاديمية هيبوكامبوس</h3>
+                    <p>نقدم التميز في التعليم الطبي للطلاب السعوديين منذ عام 2020.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="medicine.html">الطب</a></li>
+                        <li><a href="dental.html">طب الأسنان</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>اتصل بنا</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</p>
+                    <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+                    <p><i class="fas fa-envelope"></i> info@hippocampusacademy.sa</p>
+                </div>
+                <div class="footer-social">
+                    <h3>تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 أكاديمية هيبوكامبوس. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/enroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - أكاديمية هيبوكامبوس</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/rtl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1><i class="fas fa-brain"></i></h1>
+                </a>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                        <div class="slider-icons">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </label>
+                </div>
+                <div class="language-switcher">
+                    <a href="../contact.html"><i class="fas fa-language"></i> English</a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="medicine.html">الطب</a></li>
+                    <li><a href="dental.html">طب الأسنان</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html" class="active">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>اتصل بنا</h1>
+            <p>نحن هنا للإجابة على أسئلتك ومساعدتك في البدء</p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>زورنا</h3>
+                    <p>حرم أكاديمية هيبوكامبوس<br>طريق الملك عبدالله<br>الرياض، 12345<br>المملكة العربية السعودية</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>اتصل بنا</h3>
+                    <p>المكتب الرئيسي: +966 12 345 6789<br>القبول: +966 12 345 6700<br>دعم الطلاب: +966 12 345 6701</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>راسلنا</h3>
+                    <p>استفسارات عامة: info@hippocampusacademy.sa<br>القبول: admissions@hippocampusacademy.sa<br>الدعم: support@hippocampusacademy.sa</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>ساعات العمل</h3>
+                    <p>الأحد - الخميس: 8:00 صباحًا - 5:00 مساءً<br>الجمعة: مغلق<br>السبت: 10:00 صباحًا - 2:00 مساءً</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="container">
+            <h2 class="section-title">أرسل لنا رسالة</h2>
+            <div class="form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">مجال الاهتمام</label>
+                        <select id="interest" name="interest">
+                            <option value="">اختر خيارًا</option>
+                            <option value="medicine">دورات الطب</option>
+                            <option value="dental">دورات طب الأسنان</option>
+                            <option value="partnership">فرص الشراكة</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">رسالتك *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group form-checkbox">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">أوافق على جمع أكاديمية هيبوكامبوس لبياناتي وتخزينها لغرض الرد على استفساري.</label>
+                    </div>
+                    <div class="form-action">
+                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="container">
+            <h2 class="section-title">جدنا</h2>
+            <div class="map-container">
+                <!-- Placeholder for an interactive map - in a real implementation, this would be replaced with a Google Maps or similar embed -->
+                <div class="map-placeholder">
+                    <img src="https://placehold.co/1200x400/e6f7ff/0066cc?text=Map+Location+of+Hippocampus+Academy" alt="موقع أكاديمية هيبوكامبوس على الخريطة">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">الأسئلة الشائعة</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>كيف يمكنني التقديم للدورة؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>للتقديم في دورة، يمكنك إما ملء نموذج الاتصال في هذه الصفحة، أو الاتصال بمكتب القبول لدينا، أو زيارة حرمنا الجامعي شخصيًا. سيرشدك فريق القبول لدينا خلال عملية التقديم والمتطلبات.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ما هي متطلبات القبول؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>تختلف متطلبات القبول حسب الدورة. بشكل عام، نطلب شهادة الثانوية العامة أو ما يعادلها للدورات الأساسية، وخلفيات أكاديمية محددة للدورات المتقدمة. يرجى الاتصال بمكتب القبول لدينا للحصول على متطلبات محددة لدورتك المهمة.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل المنح الدراسية متاحة؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، تقدم أكاديمية هيبوكامبوس منحًا دراسية على أساس الجدارة للطلاب المتميزين. لدينا أيضًا برامج منح دراسية خاصة للطلاب المحرومين ماليًا الذين يظهرون إمكانات استثنائية. يرجى الاستفسار لدى فريق القبول لمزيد من المعلومات.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل تقدمون دورات عبر الإنترنت؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نقدم دورات مختارة بتنسيق مختلط مع مكونات عبر الإنترنت وشخصية. بعض الدورات التمهيدية متاحة بالكامل عبر الإنترنت. ومع ذلك، تتطلب معظم دوراتنا السريرية المتخصصة الحضور الشخصي للجلسات العملية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3><i class="fas fa-brain"></i> أكاديمية هيبوكامبوس</h3>
+                    <p>نقدم التميز في التعليم الطبي للطلاب السعوديين منذ عام 2020.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="medicine.html">الطب</a></li>
+                        <li><a href="dental.html">طب الأسنان</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>اتصل بنا</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</p>
+                    <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+                    <p><i class="fas fa-envelope"></i> info@hippocampusacademy.sa</p>
+                </div>
+                <div class="footer-social">
+                    <h3>تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 أكاديمية هيبوكامبوس. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
